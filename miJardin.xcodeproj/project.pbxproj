@@ -13,9 +13,15 @@
 		939B97672023F5F600C3EC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939B97652023F5F600C3EC25 /* Main.storyboard */; };
 		939B97692023F5F600C3EC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 939B97682023F5F600C3EC25 /* Assets.xcassets */; };
 		939B976C2023F5F600C3EC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939B976A2023F5F600C3EC25 /* LaunchScreen.storyboard */; };
+		939B97742023F96900C3EC25 /* StructModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B97732023F96900C3EC25 /* StructModels.swift */; };
+		939B97772023FCA900C3EC25 /* CatalogueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B97762023FCA900C3EC25 /* CatalogueTableViewCell.swift */; };
+		93ABB71E20241A250092441D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ABB71D20241A250092441D /* DetailViewController.swift */; };
+		DCF2D405C22D9D0428BF8187 /* Pods_miJardin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003A20CFEB96558CD64EC942 /* Pods_miJardin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		003A20CFEB96558CD64EC942 /* Pods_miJardin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_miJardin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C69DDF05EFB35C7882A3CA5 /* Pods-miJardin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miJardin.release.xcconfig"; path = "Pods/Target Support Files/Pods-miJardin/Pods-miJardin.release.xcconfig"; sourceTree = "<group>"; };
 		939B975C2023F5F600C3EC25 /* miJardin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miJardin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		939B975F2023F5F600C3EC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		939B97612023F5F600C3EC25 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		939B97682023F5F600C3EC25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		939B976B2023F5F600C3EC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		939B976D2023F5F600C3EC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		939B97732023F96900C3EC25 /* StructModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructModels.swift; sourceTree = "<group>"; };
+		939B97762023FCA900C3EC25 /* CatalogueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueTableViewCell.swift; sourceTree = "<group>"; };
+		93ABB71D20241A250092441D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = "/Users/jorgemr/Desktop/apps iOS/iOS Development Lab/miJardin/miJardin/DetailViewController.swift"; sourceTree = "<absolute>"; };
+		FEEB3D5982CF232DA5853009 /* Pods-miJardin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miJardin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-miJardin/Pods-miJardin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF2D405C22D9D0428BF8187 /* Pods_miJardin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73FC4FAF82F050682B6DF1E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEEB3D5982CF232DA5853009 /* Pods-miJardin.debug.xcconfig */,
+				8C69DDF05EFB35C7882A3CA5 /* Pods-miJardin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		939B97532023F5F500C3EC25 = {
 			isa = PBXGroup;
 			children = (
 				939B975E2023F5F600C3EC25 /* miJardin */,
 				939B975D2023F5F600C3EC25 /* Products */,
+				73FC4FAF82F050682B6DF1E0 /* Pods */,
+				E7AD5B20DC55332EED8AC56E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +79,33 @@
 			isa = PBXGroup;
 			children = (
 				939B975F2023F5F600C3EC25 /* AppDelegate.swift */,
+				939B97752023F96C00C3EC25 /* Models */,
 				939B97612023F5F600C3EC25 /* FirstViewController.swift */,
 				939B97632023F5F600C3EC25 /* SecondViewController.swift */,
+				939B97762023FCA900C3EC25 /* CatalogueTableViewCell.swift */,
+				93ABB71D20241A250092441D /* DetailViewController.swift */,
 				939B97652023F5F600C3EC25 /* Main.storyboard */,
 				939B97682023F5F600C3EC25 /* Assets.xcassets */,
 				939B976A2023F5F600C3EC25 /* LaunchScreen.storyboard */,
 				939B976D2023F5F600C3EC25 /* Info.plist */,
 			);
 			path = miJardin;
+			sourceTree = "<group>";
+		};
+		939B97752023F96C00C3EC25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				939B97732023F96900C3EC25 /* StructModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E7AD5B20DC55332EED8AC56E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				003A20CFEB96558CD64EC942 /* Pods_miJardin.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 939B97702023F5F600C3EC25 /* Build configuration list for PBXNativeTarget "miJardin" */;
 			buildPhases = (
+				B58F7AB3C0D167E9D7F4E56F /* [CP] Check Pods Manifest.lock */,
 				939B97582023F5F600C3EC25 /* Sources */,
 				939B97592023F5F600C3EC25 /* Frameworks */,
 				939B975A2023F5F600C3EC25 /* Resources */,
+				1E9CF6BE6B9CDD9F97472EB5 /* [CP] Embed Pods Frameworks */,
+				9A1C87AC03FB4BAD8FA6907E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +178,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E9CF6BE6B9CDD9F97472EB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-miJardin/Pods-miJardin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-miJardin/Pods-miJardin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A1C87AC03FB4BAD8FA6907E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-miJardin/Pods-miJardin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B58F7AB3C0D167E9D7F4E56F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-miJardin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		939B97582023F5F600C3EC25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,7 +239,10 @@
 			files = (
 				939B97642023F5F600C3EC25 /* SecondViewController.swift in Sources */,
 				939B97602023F5F600C3EC25 /* AppDelegate.swift in Sources */,
+				939B97742023F96900C3EC25 /* StructModels.swift in Sources */,
+				93ABB71E20241A250092441D /* DetailViewController.swift in Sources */,
 				939B97622023F5F600C3EC25 /* FirstViewController.swift in Sources */,
+				939B97772023FCA900C3EC25 /* CatalogueTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +377,7 @@
 		};
 		939B97712023F5F600C3EC25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEEB3D5982CF232DA5853009 /* Pods-miJardin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +392,7 @@
 		};
 		939B97722023F5F600C3EC25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C69DDF05EFB35C7882A3CA5 /* Pods-miJardin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
