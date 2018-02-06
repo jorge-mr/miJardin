@@ -1,0 +1,6 @@
+framework module Pods_miJardin {
+  umbrella header "Pods-miJardin-umbrella.h"
+
+  export *
+  module * { export * }
+}
